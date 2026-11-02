@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 2 PerCabangan</title>
+</head>
+<body>
+
+    <h2>Konversi Kode Peran (Role)</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        // Fungsi untuk menentukan kategori usia berdasarkan nilai
+        function carirole(kodeperan) {
+            if (kodeperan === "admin") {
+                console.log("Kode peran: " + kodeperan + ", kategorinya: Admin");
+            } else if (kodeperan === "user") {
+                console.log("Kode peran: " + kodeperan + ", kategorinya: User");
+            } else {
+                console.log("Kode peran: " + kodeperan + ", kategorinya: Guest");
+            }
+        }
+
+        // Coba beberapa contoh kode peran
+        carirole("admin");
+        carirole("user");
+        carirole("guest");
+    </script>
+
+</body>
+</html>

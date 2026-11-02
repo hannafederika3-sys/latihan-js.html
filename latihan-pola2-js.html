@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Pola 2</title>
+</head>
+<body>
+
+    <h2>Latihan Pola 2</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        // Contoh fungsi untuk mencetak pola persegi panjang
+        function buatPersegiPanjang(tinggi, lebar) {
+  let hasil = "";
+  for (let i = 0; i < tinggi; i++) {
+    for (let j = 0; j < lebar; j++) {
+      hasil += "*";
+    }
+    hasil += "\n";
+  }
+  console.log(hasil);
+}
+
+// CARA MEMANGGILNYA:
+buatPersegiPanjang(5, 15);
+    </script>
+
+</body>
+</html>

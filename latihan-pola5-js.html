@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 5 - pola</title>
+</head>
+<body>
+
+    <h2>pola segitiga sama sisi</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+        function buatSegitigaSamaSisi(tinggi) {
+    let baris = "";
+    let nomor = 1;
+
+    for (let i = 1; i <= tinggi; i++) {
+        let spasi = " ".repeat(tinggi - i);
+
+        let angka = "";
+        for (let k = 1; k <= i; k++) {
+            angka += nomor + " ";
+            nomor++;
+        }
+        baris += spasi + angka + "\n";
+    }
+
+    console.log(baris);
+}
+
+// Jalankan fungsi
+buatSegitigaSamaSisi(4);
+
+    </script>
+</body>
+</html>

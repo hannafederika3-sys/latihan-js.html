@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal 3 Function</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 3: Balik String</title>
+</head>
+<body>
+
+  <h2>Soal 3: Balik String</h2>
+  <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+  <script>
+    // Membuat fungsi untuk membalik kata/string
+    function balikString(teks) {
+      let teksTerbalik = "";
+      
+      // Loop berjalan mundur dari karakter terakhir sampai karakter pertama
+      for (let i = teks.length - 1; i >= 0; i--) {
+        teksTerbalik += teks[i];
+      }
+      
+      return teksTerbalik;
+    }
+
+    // CARA MEMANGGIL DAN MENAMPILKANNYA:
+    console.log(balikString("javascript")); // Output: tpircsavaj
+    console.log(balikString("hello"));      // Output: olleh
+    console.log(balikString("Budi"));       // Output: iduB
+    </script>
+</body>
+</html>

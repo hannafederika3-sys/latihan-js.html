@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 6 - pola</title>
+</head>
+<body>
+
+    <h2>pola belah ketupat</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+
+    <script>
+    function buatBelahKetupat(maksBintang) {
+    let hasil = "";
+    
+    
+    for (let i = 1; i <= maksBintang; i += 2) {
+        let spasi = " ".repeat(maksBintang - i);
+        
+        let bintang = "";
+        for (let k = 1; k <= i; k++) {
+            bintang += "* ";
+        }
+        hasil += spasi + bintang + "\n";
+    }
+    for (let i = maksBintang - 2; i >= 1; i -= 2) {
+        // Spasi juga dikali 2 di sini
+        let spasi = " ".repeat(maksBintang - i);
+        
+        let bintang = "";
+        for (let k = 1; k <= i; k++) {
+            bintang += "* ";
+        }
+        hasil += spasi + bintang + "\n";
+    }
+
+    console.log(hasil);
+}
+buatBelahKetupat(7);
+</script>
+</body>
+</html>

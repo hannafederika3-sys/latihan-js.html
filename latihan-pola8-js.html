@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 5 - pola</title>
+</head>
+<body>  
+
+    <h2>pola segitiga kosong</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+    function buatSegitigaKosong(tinggi) {
+        let hasil = "";
+
+        for (let i = 1; i <= tinggi; i++) {
+            let spasiKiri = " ".repeat(tinggi - i);
+            hasil += spasiKiri;
+
+            if (i === 1) {
+                hasil += "*\n";
+            } else if (i === tinggi) {
+                hasil += "* ".repeat(tinggi).trim() + "\n";
+            } else {
+                let spasiDalam = " ".repeat((i - 1) * 2 - 1);
+                hasil += "*" + spasiDalam + "*\n";
+            }
+        }
+        console.log(hasil);
+    }
+    buatSegitigaKosong(5);
+</script>
+</html>

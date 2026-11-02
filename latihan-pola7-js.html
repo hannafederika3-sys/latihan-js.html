@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 7 - pola</title>
+</head>
+<body>
+
+    <h2>pola segitiga jam pasir</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+    function buatJamPasir(maksBintang) {
+        let hasil = "";
+        for (let i = maksBintang; i >= 1; i -= 2) {
+            let spasi = " ".repeat(maksBintang - i);
+            let bintang = "";
+            for (let k = 1; k <= i; k++) {
+                bintang += "* ";
+            }
+            hasil += spasi + bintang + "\n";
+        }
+        for (let i = 3; i <= maksBintang; i += 2) {
+            let spasi = " ".repeat(maksBintang - i);
+            let bintang = "";
+            for (let k = 1; k <= i; k++) {
+                bintang += "* ";
+            }
+            hasil += spasi + bintang + "\n";
+        }
+
+        console.log(hasil);
+    }
+    buatJamPasir(7);
+</script>
+</body>
+</html>
